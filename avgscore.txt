@@ -1,0 +1,27 @@
+Average Score
+
+Input:
+number of exam scores
+each individual score (1,2,3... 10)
+(VARS: numscores, score1, score2.. score(X))
+
+Processing:
+Sum all X scores
+Divide sum by X
+(VARS: sum, avgscore)
+
+Output:
+print the avgscore
+
+
+
+- ask the user for # of scores
+- confirm # w/ user
+- [Prompt the user to enter a score] X times
+
+- sum all X scores
+- divide sum by X = avgscore
+
+- display avgscore "the average score for X scores (___,___,___,..) is ______" 
+
+

@@ -1,0 +1,14 @@
+Water Runoff
+
+Input:
+roof length (ft)
+roof width (ft)
+rain inches
+
+Processing:
+footprint = L(12) x W(12)
+cubicInches = footprint x inchesRain
+numGallons = cubicInches / 231
+
+Output:
+"__L__ x ___W___ roof with ____inchesRain__ inches of rain will collect ___numGallons____ gallons of water" 

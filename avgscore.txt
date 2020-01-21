@@ -1,8 +1,8 @@
 Average Score
 
 Input:
-number of exam scores
-each individual score (1,2,3... 10)
+X = number of exam scores -- positive integer
+score(X) = each individual score (1,2,3... 10) -- positive number
 (VARS: numscores, score1, score2.. score(X))
 
 Processing:
@@ -15,9 +15,9 @@ print the avgscore
 
 
 
-- ask the user for # of scores
+- ask the user for # of scores (repeat if not positive integer)
 - confirm # w/ user
-- [Prompt the user to enter a score] X times
+- [Prompt the user to enter a score] X times (repeat request if not positive number)
 
 - sum all X scores
 - divide sum by X = avgscore

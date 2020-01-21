@@ -1,9 +1,9 @@
 Water Runoff
 
 Input:
-roof length (ft)
-roof width (ft)
-rain inches
+roof length (ft) -- positive number
+roof width (ft) -- positive number
+rain inches -- positive number
 
 Processing:
 footprint = L(12) x W(12)

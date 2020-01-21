@@ -12,3 +12,24 @@ numGallons = cubicInches / 231
 
 Output:
 "__L__ x ___W___ roof with ____inchesRain__ inches of rain will collect ___numGallons____ gallons of water" 
+
+
+
+TEST1:
+L = 50
+W = 20
+inchesRain = 1
+
+footprint = 144,000
+cubicInches = 144,000 x 1 = 144,000
+numGallons = 144,000/231 = 623.38 gallons
+
+
+TEST2:
+L = 99
+W = 5
+inchesRain = 4.1
+
+footprint = 71,280
+cubicInches = 71,280 x 4.1 = 292,248
+numGallons = 292,248 / 231 = 1,265.14 gallons

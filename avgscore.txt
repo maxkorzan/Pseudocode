@@ -25,3 +25,18 @@ print the avgscore
 - display avgscore "the average score for X scores (___,___,___,..) is ______" 
 
 
+
+TEST1:
+X = 10
+scores = 100,100,90,98.6,75,73.1,80,81,82,83
+
+sum = 862.7
+avgscore = 862.7/10 = 86.27
+
+
+TEST2:
+X = 3
+scores = 100, 90, 80
+
+sum = 270
+avgscore = 270/3 = 90

@@ -1,0 +1,28 @@
+Selection Control Structures
+
+sequence = get input from user, calc tax percent, then apply to amount to calculate total, then display
+selection = choosing which tax percentage to apply based on the code entered by user
+repetition = repeat prompt if values are invalid
+
+INPUT
+VARS: name, amount, taxCode
+
+Prompt user to separately input Name, Purchase Amount, and Tax Code
+(repeat for each if values are invalid)
+
+PROCESS
+VARS: percentTax, salesTax, total
+ 
+if taxCode = 0, salesTax = 0
+else if taxCode = 1, percentTax = .03
+else if taxCode = 2, percentTax = .05
+else if taxCode = 3, percentTax = .07
+else return error message
+
+salesTax = amount * percentTax
+total = amount + salesTax 
+
+OUTPUT
+return name, amount, salesTax, total
+
+

@@ -1,5 +1,7 @@
 Selection Control Structures
+--------------------------------------------------------------------------------
 
+1. PROCESS CUSTOMER RECORD
 sequence = get input from user, calc tax percent, then apply to amount to calculate total, then display
 selection = choosing which tax percentage to apply based on the code entered by user
 repetition = repeat prompt if values are invalid
@@ -13,7 +15,7 @@ Prompt user to separately input Name, Purchase Amount, and Tax Code
 PROCESS
 VARS: percentTax, salesTax, total
  
-if taxCode = 0, salesTax = 0
+if taxCode = 0, percentTax = 0
 else if taxCode = 1, percentTax = .03
 else if taxCode = 2, percentTax = .05
 else if taxCode = 3, percentTax = .07
@@ -24,5 +26,63 @@ total = amount + salesTax
 
 OUTPUT
 return name, amount, salesTax, total
+
+---------------- 
+TEST1:
+Jimmy, 300, 2
+percent tax = .05
+sales tax = (300)(.05) = 15
+total = 300 + 15 = 315
+"Jimmy, your total cost for a purchase of $300 is $315"
+
+TEST2:
+Amanda, 20, 0
+percent tax = 0
+sales tax = (20)(0) = 0
+total = 20 + 0 = 20
+"Amanda, your total cost for a purchase of $20 is $20"
+
+
+--------------------------------------------------------------------------------
+
+2. CALCULATE EMPLOYEE'S PAY
+sequence = get inputs, check for validity, check if there's overtime, and then calculate accordingly
+selection = depending on the number of hours, the rate is calculated with/out overtime
+repetition = using a while loop to ensure entered hourly rate does not exceed 25 
+
+INPUT
+get employee number, pay rate, and hours worked from user
+check each input, repeat prompt if invalid
+ 
+PROCESS
+check that hours do not exceed 60, AND rate does not exceed $25
+if either is invalid, return those values in error message
+
+while rate <= 25:
+	if hours = 0-35
+	pay = (hours)(rate)
+ 
+	if hours = 36-60
+	pay = (35)(rate) + (hours-35)(rate*1.5)
+
+	if hours = >60
+	return error message
+
+otherwise return error message
+
+OUTPUT
+print the user's pay
+
+---------------- 
+TEST1:
+#1234, $20, 55hrs
+pay = (35)(20) + (55-35)(20*1.5) = 700+600 = 1300
+"#1234, your weekly pay is $1300"
+
+TEST2:
+#6789, $30, 40hrs
+rate > 25, so return error 
+"#6789, your entered hourly rate is $30 for 40 hours"
+
 
 
